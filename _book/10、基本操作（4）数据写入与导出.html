@@ -1,0 +1,543 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>数据写入与导出 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="11、基本操作（5）元数据管理.html" />
+    
+    
+    <link rel="prev" href="9、基本操作（3）聚合查询.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1、时序数据库.html">
+            
+                <a href="1、时序数据库.html">
+            
+                    
+                    背景介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1、时序数据库.html">
+            
+                <a href="1、时序数据库.html">
+            
+                    
+                    时序数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2、IoTDB介绍.html">
+            
+                <a href="2、IoTDB介绍.html">
+            
+                    
+                    IoTDB介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3、架构部署.html">
+            
+                <a href="3、架构部署.html">
+            
+                    
+                    架构部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="4、安装指南.html">
+            
+                <a href="4、安装指南.html">
+            
+                    
+                    快速上手
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="4、安装指南.html">
+            
+                <a href="4、安装指南.html">
+            
+                    
+                    安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="5、启动与退出.html">
+            
+                <a href="5、启动与退出.html">
+            
+                    
+                    启动与退出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="6、数据模式.html">
+            
+                <a href="6、数据模式.html">
+            
+                    
+                    数据模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="7、基本操作（1）数据导入.html">
+            
+                <a href="7、基本操作（1）数据导入.html">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="7、基本操作（1）数据导入.html">
+            
+                <a href="7、基本操作（1）数据导入.html">
+            
+                    
+                    数据导入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="8、基本操作（2）基本查询.html">
+            
+                <a href="8、基本操作（2）基本查询.html">
+            
+                    
+                    基本查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="9、基本操作（3）聚合查询.html">
+            
+                <a href="9、基本操作（3）聚合查询.html">
+            
+                    
+                    聚合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="10、基本操作（4）数据写入与导出.html">
+            
+                <a href="10、基本操作（4）数据写入与导出.html">
+            
+                    
+                    数据写入与导出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="11、基本操作（5）元数据管理.html">
+            
+                <a href="11、基本操作（5）元数据管理.html">
+            
+                    
+                    元数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="12、时区注意事项.html">
+            
+                <a href="12、时区注意事项.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="12、时区注意事项.html">
+            
+                <a href="12、时区注意事项.html">
+            
+                    
+                    时区注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >数据写入与导出</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x63D2;&#x5165;&#x6570;&#x636E;">&#x63D2;&#x5165;&#x6570;&#x636E;</h1>
+<p>&#x7269;&#x8054;&#x7F51;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x5143;&#x4EF6;&#x4EA7;&#x751F;&#x6570;&#x636E;&#x81EA;&#x52A8;&#x5199;&#x5165;&#xFF0C;&#x4F46;&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x8FC7;&#x53BB;&#x7684;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x9700;&#x8981;&#x4FEE;&#x6539;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;inserte&#x8BED;&#x53E5;&#x63D2;&#x5165;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x503C;&#x53EF;&#x8986;&#x76D6;&#x539F;&#x6570;&#x636E;&#x3002;</p>
+<h2 id="&#x63D2;&#x5165;&#x5355;&#x884C;&#x6570;&#x636E;">&#x63D2;&#x5165;&#x5355;&#x884C;&#x6570;&#x636E;</h2>
+<p>&#x53EF;&#x4EE5;&#x5411;&#x5DF2;&#x6709;&#x7684;&#x65F6;&#x95F4;&#x5E8F;&#x5217;root.BHSFC.Q1.W002.speed&#x4E2D;&#x63D2;&#x5165;&#x6570;&#x636E;&#xFF0C;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> root.BHSFC.Q1.W003(<span class="hljs-keyword">timestamp</span>,speed) <span class="hljs-keyword">values</span>(<span class="hljs-number">1657472400000</span>,<span class="hljs-number">2</span>)
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x67E5;&#x770B;&#x662F;&#x5426;&#x63D2;&#x5165;&#x6210;&#x529F;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">select</span> speed <span class="hljs-keyword">from</span> root.BHSFC.Q1.W003
+</code></pre>
+<p>&#x663E;&#x793A;&#x5982;&#x4E0B;&#xFF0C;&#x53EF;&#x77E5;&#x5DF2;&#x63D2;&#x5165;&#x6210;&#x529F;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; select speed from root.BHSFC.Q1.W003
++-----------------------------+------------------------+
+|                         Time|root.BHSFC.Q1.W003.speed|
++-----------------------------+------------------------+
+|2022-07-11T00:00:00.000+08:00|                     1.0|
+|2022-07-11T01:00:00.000+08:00|                     2.0|
++-----------------------------+------------------------+
+Total line number = 2
+</code></pre>
+<h1 id="&#x5220;&#x9664;&#x6570;&#x636E;">&#x5220;&#x9664;&#x6570;&#x636E;</h1>
+<h2 id="sql&#x8BED;&#x53E5;&#x5220;&#x9664;">SQL&#x8BED;&#x53E5;&#x5220;&#x9664;</h2>
+<h3 id="&#x5220;&#x9664;&#x6574;&#x4E2A;&#x65F6;&#x95F4;&#x5E8F;&#x5217;">&#x5220;&#x9664;&#x6574;&#x4E2A;&#x65F6;&#x95F4;&#x5E8F;&#x5217;</h3>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;SQL&#x8BED;&#x53E5;&#x5220;&#x9664;&#x5355;&#x4E2A;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#xFF0C;&#x4F8B;&#x5982;&#x5220;&#x9664;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x7684;SQL&#x8BED;&#x53E5;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">delete</span> <span class="hljs-keyword">from</span> root.BHSFC.Q1.W003.speed
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x9A8C;&#x8BC1;&#x4E00;&#x4E0B;&#xFF0C;&#x8F93;&#x5165;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;<code>select speed from root.BHSFC.Q1.W003</code>&#xFF0C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x5DF2;&#x7ECF;&#x6CA1;&#x6709;&#x6570;&#x636E;&#x4E86;&#xFF0C;&#x8BF4;&#x660E;&#x5220;&#x9664;&#x6210;&#x529F;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-SQL">```
+IoTDB&gt; select speed from root.BHSFC.Q1.W003
++----+------------------------------+
+|Time|root.BHSFC.Q1.W003.speed|
++----+------------------------------+
++----+------------------------------+
+Empty set.
+```
+</code></pre>
+<h3 id="&#x5220;&#x9664;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;">&#x5220;&#x9664;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x636E;</h3>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x4E0E;where&#x8BED;&#x53E5;&#x7ED3;&#x5408;&#x5220;&#x9664;&#x67D0;&#x4E2A;&#x65F6;&#x95F4;&#x7247;&#x6BB5;&#xFF0C;&#x5982;&#x5220;&#x9664;2022&#x5E74;1&#x6708;14&#x65E5;&#x96F6;&#x70B9;&#x4E4B;&#x540E;&#x7684;&#x6570;&#x636E;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">delete</span> <span class="hljs-keyword">from</span> root.BHSFC.Q1.W003 <span class="hljs-keyword">where</span> <span class="hljs-keyword">time</span>&lt;=<span class="hljs-number">2022</span><span class="hljs-number">-01</span><span class="hljs-number">-14</span>T00:<span class="hljs-number">00</span>:<span class="hljs-number">00</span>
+</code></pre>
+<h2 id="ttl&#x81EA;&#x52A8;&#x5220;&#x9664;">TTL&#x81EA;&#x52A8;&#x5220;&#x9664;</h2>
+<p>TTL&#x662F;&#x6570;&#x636E;&#x5B58;&#x6D3B;&#x65F6;&#x95F4;&#xFF0C;&#x9488;&#x5BF9;&#x5B58;&#x50A8;&#x7EC4;&#x8FDB;&#x884C;&#x8FD0;&#x4F5C;&#x3002;&#x8BBE;&#x7F6E;TTL&#x540E;IoTDB&#x5C06;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x4E4B;&#x524D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8BBE;&#x7F6E;&#x5B8C;&#x5373;&#x751F;&#x6548;&#x3002;</p>
+<h3 id="&#x8BBE;&#x7F6E;ttl">&#x8BBE;&#x7F6E;TTL</h3>
+<p>SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">set</span> ttl <span class="hljs-keyword">to</span> root.BHSFC.Q1.W003 <span class="hljs-number">3600000</span>
+</code></pre>
+<p>&#x8FD9;&#x6761;&#x8BED;&#x53E5;&#x8868;&#x793A;&#x5728;root.BHSFCQ1.W003&#x8BBE;&#x5907;&#x4E2D;&#xFF0C;&#x6700;&#x8FD1;&#x4E00;&#x4E2A;&#x5C0F;&#x65F6;&#x7684;&#x6570;&#x636E;&#x5C06;&#x4F1A;&#x4FDD;&#x5B58;&#xFF0C;&#x65E7;&#x6570;&#x636E;&#x4F1A;&#x88AB;&#x5220;&#x9664;&#x3002;</p>
+<h3 id="&#x53D6;&#x6D88;ttl">&#x53D6;&#x6D88;TTL</h3>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x53D6;&#x6D88;&#x8FD9;&#x6761;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x7684;TTL&#xFF0C;SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">unset ttl to root.BHSFC.Q1.W003
+</code></pre>
+<h3 id="&#x663E;&#x793A;-ttl">&#x663E;&#x793A; TTL</h3>
+<p>SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> all ttl
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">+<span class="hljs-comment">-------------+----+</span>
+|storage group| ttl|
++<span class="hljs-comment">-------------+----+</span>
+|      root.ln|null|
+|   root.BHSFC|null|
++<span class="hljs-comment">-------------+----+</span>
+Total line number = 2
+</code></pre>
+<p>&#x672A;&#x8BBE;&#x7F6E;TTL&#x7684;&#x5B58;&#x50A8;&#x7EC4;&#x7684; TTL &#x663E;&#x793A;&#x4E3A; null&#x3002;</p>
+<h1 id="&#x5BFC;&#x51FA;&#x6570;&#x636E;">&#x5BFC;&#x51FA;&#x6570;&#x636E;</h1>
+<h2 id="csv&#x5BFC;&#x51FA;">CSV&#x5BFC;&#x51FA;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;CSV&#x5DE5;&#x5177;&#x5BFC;&#x51FA;&#x3002;&#x9996;&#x5148;&#x8FDB;&#x5230;tools&#x76EE;&#x5F55;&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x5165;SQL&#x8BED;&#x53E5;&#xFF1A;`</p>
+<pre><code class="lang-SQL">./export-csv.sh -h 127.0.0.1 -p 6667 -u root -pw root -td ./
+</code></pre>
+<p>&#x4E4B;&#x540E;&#x4F1A;&#x51FA;&#x73B0;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#xFF0C;&#x6211;&#x4EEC;&#x6309;&#x9700;&#x8F93;&#x5165;SQL&#x8BED;&#x53E5;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x8981;&#x5BFC;&#x51FA;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x7684;&#x5E73;&#x5747;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">select</span> <span class="hljs-keyword">AVG</span>(*) <span class="hljs-keyword">from</span> root.BHSFC.Q1.W002
+</code></pre>
+<p>&#x663E;&#x793A;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-SQL">ExportCsv&gt; please input query: select AVG(*) from root.BHSFC.Q1.W002
+select AVG(*) from root.BHSFC.Q1.W002
+19:23:27.053 [main] DEBUG org.apache.iotdb.session.Session - EndPoint(ip:127.0.0.1, port:6667) execute sql select AVG(*) from root.BHSFC.Q1.W002
+Export completely!
+</code></pre>
+<p>&#x5BFC;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;CSV&#x8868;&#x683C;&#xFF0C;&#x5185;&#x5BB9;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">AVG(root.BHSFC.Q1.W002.WROT_HubTmp)
+17.683083226110213
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="9、基本操作（3）聚合查询.html" class="navigation navigation-prev " aria-label="Previous page: 聚合查询">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="11、基本操作（5）元数据管理.html" class="navigation navigation-next " aria-label="Next page: 元数据管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数据写入与导出","level":"1.4.4","depth":2,"next":{"title":"元数据管理","level":"1.4.5","depth":2,"path":"11、基本操作（5）元数据管理.md","ref":"11、基本操作（5）元数据管理.md","articles":[]},"previous":{"title":"聚合查询","level":"1.4.3","depth":2,"path":"9、基本操作（3）聚合查询.md","ref":"9、基本操作（3）聚合查询.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"10、基本操作（4）数据写入与导出.md","mtime":"2022-08-15T07:55:24.445Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-17T07:19:25.384Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

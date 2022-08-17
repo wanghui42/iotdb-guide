@@ -1,0 +1,725 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>元数据管理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="12、时区注意事项.html" />
+    
+    
+    <link rel="prev" href="10、基本操作（4）数据写入与导出.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1、时序数据库.html">
+            
+                <a href="1、时序数据库.html">
+            
+                    
+                    背景介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1、时序数据库.html">
+            
+                <a href="1、时序数据库.html">
+            
+                    
+                    时序数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2、IoTDB介绍.html">
+            
+                <a href="2、IoTDB介绍.html">
+            
+                    
+                    IoTDB介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3、架构部署.html">
+            
+                <a href="3、架构部署.html">
+            
+                    
+                    架构部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="4、安装指南.html">
+            
+                <a href="4、安装指南.html">
+            
+                    
+                    快速上手
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="4、安装指南.html">
+            
+                <a href="4、安装指南.html">
+            
+                    
+                    安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="5、启动与退出.html">
+            
+                <a href="5、启动与退出.html">
+            
+                    
+                    启动与退出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="6、数据模式.html">
+            
+                <a href="6、数据模式.html">
+            
+                    
+                    数据模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="7、基本操作（1）数据导入.html">
+            
+                <a href="7、基本操作（1）数据导入.html">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="7、基本操作（1）数据导入.html">
+            
+                <a href="7、基本操作（1）数据导入.html">
+            
+                    
+                    数据导入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="8、基本操作（2）基本查询.html">
+            
+                <a href="8、基本操作（2）基本查询.html">
+            
+                    
+                    基本查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="9、基本操作（3）聚合查询.html">
+            
+                <a href="9、基本操作（3）聚合查询.html">
+            
+                    
+                    聚合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="10、基本操作（4）数据写入与导出.html">
+            
+                <a href="10、基本操作（4）数据写入与导出.html">
+            
+                    
+                    数据写入与导出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="11、基本操作（5）元数据管理.html">
+            
+                <a href="11、基本操作（5）元数据管理.html">
+            
+                    
+                    元数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="12、时区注意事项.html">
+            
+                <a href="12、时区注意事项.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="12、时区注意事项.html">
+            
+                <a href="12、时区注意事项.html">
+            
+                    
+                    时区注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >元数据管理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tsfile&#x7BA1;&#x7406;">TsFile&#x7BA1;&#x7406;</h1>
+<p>&#x6211;&#x4EEC;&#x5229;&#x7528;&#x5DF2;&#x6709;&#x7684;TsFile&#x6587;&#x4EF6;&#x6765;&#x4F53;&#x9A8C;&#x5176;&#x64CD;&#x4F5C;&#xFF0C;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x8FDB;&#x5165;IoTDB&#x7684;data&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x4E00;&#x8DEF;&#x70B9;&#x8FDB;&#x53BB;&#x80FD;&#x627E;&#x5230;TsFile&#x540E;&#x7F00;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x548C;&#x4EE5;TsFlie.resource&#x4E3A;&#x540E;&#x7F00;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x590D;&#x5236;&#x90A3;&#x4E00;&#x4E2A;TsFile&#x540E;&#x7F00;&#x7684;&#x6587;&#x4EF6;&#x5230;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x5939;&#x5373;&#x53EF;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#xFF0C;&#x6700;&#x540E;&#x518D;&#x52A0;&#x8F7D;&#x590D;&#x5236;&#x8FC7;&#x53BB;&#x7684;TsFile&#x3002;</p>
+<h2 id="&#x5220;&#x9664;tsfile">&#x5220;&#x9664;TsFile</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>remove &apos;&lt;path&gt;&apos;</code>&#x8BED;&#x53E5;&#x6765;&#x5220;&#x9664;TsFile&#x6587;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x5220;&#x9664;/usr/apache-iotdb-0.13.0-all-bin/data/data/sequence/root.BHSFC/0/0/&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;1657277482259-1-0-2.tsfile&#x6587;&#x4EF6;&#xFF0C;&#x6307;&#x4EE4;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">remove &apos;/usr/apache-iotdb-0.13.0-all-bin/data/data/sequence/root.BHSFC/0/0/1657277482259-1-0-2.tsfile&apos;
+</code></pre>
+<p>&#x63D0;&#x793A;executed successfully&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x67E5;&#x8BE2;&#x4E00;&#x4E0B;&#x884C;&#x6570;&#xFF0C;&#x53D1;&#x73B0;&#x53D8;&#x4E3A;0&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; select count(WROT_HubTmp) from root.BHSFC.Q1.W002
++-------------------------------------+
+|count(root.BHSFC.Q1.W002.WROT_HubTmp)|
++-------------------------------------+
+|                                    0|
++-------------------------------------+
+Total line number = 1
+</code></pre>
+<h2 id="&#x52A0;&#x8F7D;tsfile">&#x52A0;&#x8F7D;TsFile</h2>
+<p>&#x52A0;&#x8F7D;TsFile&#x6587;&#x4EF6;&#x7684;&#x6307;&#x4EE4;&#x4E3A;&#xFF1A;<code>load &apos;&lt;path/dir&gt;&apos; [autoregister=true/false][,sglevel=int][,verify=true/false]</code></p>
+<p>&#x8FD9;&#x91CC;&#x7684;&#x8DEF;&#x5F84;&#x53EF;&#x4EE5;&#x662F;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x6587;&#x4EF6;&#x5939;&#x8DEF;&#x5F84;&#xFF0C;&#x53EF;&#x4EE5;&#x5BFC;&#x5165;&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x8005;&#x5BFC;&#x5165;&#x6587;&#x4EF6;&#x5939;&#x3002;autoregister&#x8868;&#x793A;&#x662F;&#x5426;&#x81EA;&#x52A8;&#x521B;&#x5EFA; schema &#xFF0C;&#x53C2;&#x6570;&#x4E3A; true &#x8868;&#x793A;&#x81EA;&#x52A8;&#x521B;&#x5EFA; schema&#xFF0C;&#x76F8;&#x53CD; false &#x8868;&#x793A;&#x4E0D;&#x521B;&#x5EFA;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;true&#xFF1B;sglevel&#x8868;&#x793A;&#x8BBE;&#x5B9A;&#x5B58;&#x50A8;&#x7EC4;&#x7EA7;&#x522B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;iotdb-datanode.properties&#x4E2D;&#x8BBE;&#x7F6E;&#x7684;&#x7EA7;&#x522B;&#xFF1B;verify&#x8868;&#x793A;&#x662F;&#x5426;&#x5BF9;TsFile&#x4E2D;&#x7684;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x8FDB;&#x884C;&#x5143;&#x6570;&#x636E;&#x68C0;&#x67E5;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; true&#x3002;&#x5F00;&#x542F;&#x65F6;&#x5982;&#x679C;&#x8F7D;&#x5165;&#x7684; tsfile &#x4E2D;&#x7684;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x5728;&#x5F53;&#x524D; iotdb &#x4E2D;&#x4E5F;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x4F1A;&#x6BD4;&#x8F83;&#x8BE5;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x7684;&#x6240;&#x6709; Measurement &#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;&#x5426;&#x4E00;&#x81F4;&#xFF0C;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x4E0D;&#x4E00;&#x81F4;&#x5C06;&#x4F1A;&#x5BFC;&#x81F4;&#x8F7D;&#x5165;&#x5931;&#x8D25;&#xFF0C;&#x5173;&#x95ED;&#x8BE5;&#x9009;&#x9879;&#x4F1A;&#x8DF3;&#x8FC7;&#x68C0;&#x67E5;&#xFF0C;&#x8F7D;&#x5165;&#x66F4;&#x5FEB;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#xFF0C;&#x6B64;&#x524D;&#x5DF2;&#x5C06;TsFile&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;&#x4E86;&#x6587;&#x4EF6;&#x5939;/var/opt/&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">load</span> <span class="hljs-string">&apos;/var/opt/1657277482259-1-0-2.tsfile&apos;</span> autoregister=<span class="hljs-literal">false</span>,sglevel=<span class="hljs-number">1</span>,<span class="hljs-keyword">verify</span>=<span class="hljs-literal">true</span>
+</code></pre>
+<p>&#x8F93;&#x5165;&#x4E4B;&#x540E;&#x663E;&#x793A;executed successfully&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x8BE2;&#x4E00;&#x4E0B;&#x884C;&#x6570;&#x6765;&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x5BFC;&#x5165;&#x6210;&#x529F;&#xFF0C;&#x53D1;&#x73B0;&#x884C;&#x6570;&#x7531;0&#x53D8;&#x4E3A;13834&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; load &apos;/var/opt/1657277482259-1-0-2.tsfile&apos; autoregister=false,sglevel=1,verify=true
+Msg: The statement is executed successfully.
+IoTDB&gt; select count(WROT_HubTmp) from root.BHSFC.Q1.W002
++-------------------------------------+
+|count(root.BHSFC.Q1.W002.WROT_HubTmp)|
++-------------------------------------+
+|                                13834|
++-------------------------------------+
+Total line number = 1
+</code></pre>
+<h1 id="&#x5B58;&#x50A8;&#x7EC4;&#x7BA1;&#x7406;">&#x5B58;&#x50A8;&#x7EC4;&#x7BA1;&#x7406;</h1>
+<h2 id="&#x521B;&#x5EFA;&#x5B58;&#x50A8;&#x7EC4;">&#x521B;&#x5EFA;&#x5B58;&#x50A8;&#x7EC4;</h2>
+<p>&#x6839;&#x636E;&#x5B58;&#x50A8;&#x6A21;&#x578B;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x6A21;&#x578B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;CREATE STORAGE GROUP&#x8BED;&#x53E5;&#xFF0C;&#x4F8B;&#x5982;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;root.ln&#x7684;&#x5B58;&#x50A8;&#x7EC4;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">create</span> <span class="hljs-keyword">storage</span> <span class="hljs-keyword">group</span> root.<span class="hljs-keyword">ln</span>
+</code></pre>
+<p>&#x63D0;&#x793A;&#x201C;The statement is executed successfully&#x201D;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; create storage group root.ln
+Msg: The statement is executed successfully.
+</code></pre>
+<h2 id="&#x67E5;&#x770B;&#x5B58;&#x50A8;&#x7EC4;">&#x67E5;&#x770B;&#x5B58;&#x50A8;&#x7EC4;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;show storage group&#x8BED;&#x53E5;&#x67E5;&#x770B;&#x5B58;&#x50A8;&#x7EC4;&#xFF0C;SQL&#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> <span class="hljs-keyword">storage</span> <span class="hljs-keyword">group</span>
+</code></pre>
+<p>&#x4F7F;&#x7528;show storage group&#x67E5;&#x770B;&#x6240;&#x6709;&#x5B58;&#x50A8;&#x7EC4;&#xFF0C;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; show storage group
++-------------+
+|storage group|
++-------------+
+|   root.BHSFC|
++-------------+
+Total line number = 1
+</code></pre>
+<p>&#x540C;&#x6837;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;<em>&#x7B80;&#x5316;&#x67E5;&#x8BE2;&#xFF0C;&#x5982;show storage group root.</em>&#x3002;</p>
+<h2 id="&#x5220;&#x9664;&#x5B58;&#x50A8;&#x7EC4;">&#x5220;&#x9664;&#x5B58;&#x50A8;&#x7EC4;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;delete storage group<pathpattern>&#x8BED;&#x53E5;&#x5220;&#x9664;&#x5B58;&#x50A8;&#x7EC4;&#xFF0C;&#x5220;&#x9664;&#x5B58;&#x50A8;&#x7EC4;roo.BHSFC&#x7684;SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</pathpattern></p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">delete</span> <span class="hljs-keyword">storage</span> <span class="hljs-keyword">group</span> root.BHSFC
+</code></pre>
+<p>&#x540C;&#x6837;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;*&#x7B80;&#x5316;&#x8BED;&#x53E5;&#x3002;</p>
+<h2 id="&#x7EDF;&#x8BA1;&#x5B58;&#x50A8;&#x7EC4;&#x6570;&#x91CF;">&#x7EDF;&#x8BA1;&#x5B58;&#x50A8;&#x7EC4;&#x6570;&#x91CF;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;count storage group<pathpattern>&#x8BED;&#x53E5;&#x7EDF;&#x8BA1;&#x5B58;&#x50A8;&#x7EC4;&#x6570;&#x91CF;&#xFF0C;&#x7EDF;&#x8BA1;&#x6240;&#x6709;&#x5B58;&#x50A8;&#x7EC4;&#x7684;SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</pathpattern></p>
+<pre><code class="lang-SQL">count storage group
+</code></pre>
+<p>&#x8F93;&#x5165;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; count storage group
++-------------+
+|storage group|
++-------------+
+|            1|
++-------------+
+Total line number = 1
+</code></pre>
+<p>&#x540C;&#x6837;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;*&#x7B80;&#x5316;&#x8BED;&#x53E5;&#x3002;</p>
+<h1 id="&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x7BA1;&#x7406;">&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x7BA1;&#x7406;</h1>
+<h2 id="&#x521B;&#x5EFA;&#x5BF9;&#x9F50;&#x65F6;&#x95F4;&#x5E8F;&#x5217;">&#x521B;&#x5EFA;&#x5BF9;&#x9F50;&#x65F6;&#x95F4;&#x5E8F;&#x5217;</h2>
+<p>&#x524D;&#x9762;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x5355;&#x6761;&#x65F6;&#x95F4;&#x5E8F;&#x5217;root.BHSFC.Q1.W003.speed&#x3002;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x6765;&#x521B;&#x5EFA;&#x5BF9;&#x9F50;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x3002;&#x5BF9;&#x9F50;&#x6307;&#x7684;&#x662F;&#x4E0D;&#x540C;&#x4F20;&#x611F;&#x5668;&#x7684;&#x503C;&#x540C;&#x65F6;&#x5230;&#x6765;&#xFF0C;&#x5373;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x53EF;&#x4EE5;&#x6309;&#x4E00;&#x5217;&#x65F6;&#x95F4;&#x6233;&#x6765;&#x5B58;&#x50A8;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x4EEC;&#x770B;&#x4E4B;&#x524D;&#x7684;&#x6570;&#x636E;&#x6A21;&#x5F0F;&#x56FE;&#xFF0C;&#x8BBE;&#x5907;w002&#x548C;w003&#x5206;&#x5C5E;&#x4E24;&#x4E2A;&#x5B9E;&#x4F53;&#xFF0C;&#x5B83;&#x4EEC;&#x4E4B;&#x4E0B;&#x7684;&#x4E24;&#x6761;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x662F;&#x975E;&#x5BF9;&#x9F50;&#x7684;&#xFF0C;&#x5373;&#x5B58;&#x50A8;&#x7684;&#x65F6;&#x95F4;&#x6233;&#x548C;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x53EF;&#x4EE5;&#x4E0D;&#x4E00;&#x81F4;&#x3002;&#x800C;&#x8BBE;&#x5907;wf01&#x4E0B;&#x6709;&#x4E24;&#x4E2A;&#x4F20;&#x611F;&#x5668;&#xFF0C;status&#x548C;temperature&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E3A;&#x5BF9;&#x9F50;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x3002;</p>
+<p><img src="img/img14.png" alt="img14"></p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8F93;&#x5165;SQL&#x8BED;&#x53E5;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">create</span> aligned timeseries root.<span class="hljs-keyword">ln</span>.wf01(<span class="hljs-keyword">status</span> <span class="hljs-built_in">BOOLEAN</span> <span class="hljs-keyword">encoding</span>=PLAIN compressor=SNAPPY, temperature <span class="hljs-built_in">FLOAT</span> <span class="hljs-keyword">encoding</span>=PLAIN compressor=SNAPPY)
+</code></pre>
+<h2 id="&#x67E5;&#x8BE2;&#x65F6;&#x95F4;&#x5E8F;&#x5217;">&#x67E5;&#x8BE2;&#x65F6;&#x95F4;&#x5E8F;&#x5217;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;show timeseries &lt;<code>Path</code>&gt;&#x6765;&#x67E5;&#x8BE2;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x3002;&#x4F8B;&#x5982;&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x7684;SQL&#x8BED;&#x53E5;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> timeseries
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; show timeseries
++------------------------------+-----+-------------+--------+--------+-----------+----+----------+
+|                    timeseries|alias|storage group|dataType|encoding|compression|tags|attributes|
++------------------------------+-----+-------------+--------+--------+-----------+----+----------+
+|      root.ln.wf01.temperature| null|      root.ln|   FLOAT|   PLAIN|     SNAPPY|null|      null|
+|           root.ln.wf01.status| null|      root.ln| BOOLEAN|   PLAIN|     SNAPPY|null|      null|
+|root.BHSFC.Q1.W002.WROT_HubTmp| null|   root.BHSFC|  DOUBLE| GORILLA|     SNAPPY|null|      null|
+|      root.BHSFC.Q1.W003.speed| null|   root.BHSFC|   FLOAT|     RLE|     SNAPPY|null|      null|
++------------------------------+-----+-------------+--------+--------+-----------+----+----------+
+Total line number = 4
+</code></pre>
+<p>&#x67E5;&#x8BE2;&#x5B58;&#x50A8;&#x7EC4;root.BHSFC&#x4E0B;&#x7684;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> timeseries root.BHSFC.**
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; show timeseries root.BHSFC.**
++------------------------------+-----+-------------+--------+--------+----------                                               -+----+----------+
+|                    timeseries|alias|storage group|dataType|encoding|compressio                                               n|tags|attributes|
++------------------------------+-----+-------------+--------+--------+----------                                               -+----+----------+
+|root.BHSFC.Q1.W002.WROT_HubTmp| null|   root.BHSFC|  DOUBLE| GORILLA|     SNAPP                                               Y|null|      null|
+|      root.BHSFC.Q1.W003.speed| null|   root.BHSFC|   FLOAT|     RLE|     SNAPP                                               Y|null|      null|
++------------------------------+-----+-------------+--------+--------+----------                                               -+----+----------+
+Total line number = 2
+</code></pre>
+<h2 id="&#x5220;&#x9664;&#x65F6;&#x95F4;&#x5E8F;&#x5217;">&#x5220;&#x9664;&#x65F6;&#x95F4;&#x5E8F;&#x5217;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>DELETE TimeSeries &lt;PathPattern&gt;</code>&#x8BED;&#x53E5;&#x6765;&#x5220;&#x9664;&#x65F6;&#x95F4;&#x5E8F;&#x5217;,&#x4F8B;&#x5982;&#x5220;&#x9664;&#x65F6;&#x95F4;&#x5E8F;&#x5217;root.ln.wf01.temperature&#x7684;SQL &#x8BED;&#x53E5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-Plain">delete timeseries root.ln.wf01.temperature
+</code></pre>
+<h3 id="&#x7EDF;&#x8BA1;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x603B;&#x6570;">&#x7EDF;&#x8BA1;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x603B;&#x6570;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>COUNT TIMESERIES&lt;Path&gt;</code>&#x6765;&#x7EDF;&#x8BA1;&#x4E00;&#x6761;&#x8DEF;&#x5F84;&#x4E2D;&#x7684;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x4E2A;&#x6570;&#x3002;&#x4F8B;&#x5982;&#x7EDF;&#x8BA1;&#x6240;&#x6709;&#x7684;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#xFF0C;SQL &#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">count timeseries root.**
+</code></pre>
+<p>&#x663E;&#x793A;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; count timeseries root.**
++-----+
+|count|
++-----+
+|    3|
++-----+
+Total line number = 1
+</code></pre>
+<h1 id="&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#x7BA1;&#x7406;">&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#x7BA1;&#x7406;</h1>
+<p>&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#x53EF;&#x4EE5;&#x7B80;&#x5316;&#x540C;&#x7C7B;&#x578B;&#x5B9E;&#x4F53;&#x7684;&#x7BA1;&#x7406;&#xFF0C;&#x51CF;&#x5C11;&#x5143;&#x6570;&#x636E;&#x5185;&#x5B58;&#x5360;&#x7528;&#x3002;</p>
+<h2 id="&#x521B;&#x5EFA;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;">&#x521B;&#x5EFA;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;</h2>
+<p>&#x6839;&#x636E;&#x9700;&#x8981;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x7684;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#xFF0C;&#x4F8B;&#x5982;&#x6211;&#x6709;&#x4E24;&#x4E2A;&#x5BF9;&#x9F50;&#x7684;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x521B;&#x5EFA;&#x5305;&#x542B;&#x4E00;&#x7EC4;&#x5BF9;&#x9F50;&#x5E8F;&#x5217;&#x7684;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#xFF0C;SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">create</span> <span class="hljs-keyword">schema</span> <span class="hljs-keyword">template</span> t1 aligned (<span class="hljs-number">1</span> <span class="hljs-built_in">FLOAT</span> <span class="hljs-keyword">encoding</span>=Gorilla, <span class="hljs-number">2</span> <span class="hljs-built_in">FLOAT</span> <span class="hljs-keyword">encoding</span>=Gorilla)
+</code></pre>
+<h2 id="&#x6302;&#x8F7D;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;">&#x6302;&#x8F7D;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;</h2>
+<p>&#x521B;&#x5EFA;&#x4E4B;&#x540E;&#x6302;&#x8F7D;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x628A;&#x5B83;&#x5E94;&#x7528;&#x5230;root.ln&#x5B58;&#x50A8;&#x7EC4;&#x7684;&#x4E0B;&#x4E00;&#x5C42;&#x7EA7;&#xFF0C;SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">set</span> <span class="hljs-keyword">schema</span> <span class="hljs-keyword">template</span> t1 <span class="hljs-keyword">to</span> root.<span class="hljs-keyword">ln</span>.wf01
+</code></pre>
+<p>&#x6B64;&#x65F6;&#x8FD9;&#x4E2A;&#x6A21;&#x677F;&#x662F;&#x7A7A;&#x7684;&#xFF0C;&#x867D;&#x7136;&#x8FD9;&#x4E2A;&#x5B58;&#x50A8;&#x7EC4;&#x4E0B;&#x6709;&#x4E24;&#x6761;&#x4E4B;&#x524D;&#x521B;&#x5EFA;&#x7684;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x4E0D;&#x4F1A;&#x6302;&#x8F7D;&#x5230;&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#x3002;&#x6211;&#x4EEC;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#xFF0C;SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">create</span> timeseries <span class="hljs-keyword">of</span> <span class="hljs-keyword">schema</span> <span class="hljs-keyword">template</span> <span class="hljs-keyword">on</span> root.<span class="hljs-keyword">ln</span>.wf01.<span class="hljs-keyword">test</span>
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x4E24;&#x6761;&#x5171;&#x4EAB;root.ln.wf01.test&#x8DEF;&#x5F84;&#x7684;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x5C31;&#x521B;&#x5EFA;&#x597D;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x7B80;&#x5355;&#x67E5;&#x8BE2;&#x4E00;&#x4E0B;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> timeseries root.<span class="hljs-keyword">ln</span>.**
+</code></pre>
+<p>&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x663E;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; show timeseries root.ln.**
++------------------------+-----+-------------+--------+--------+-----------+----+----------+
+|              timeseries|alias|storage group|dataType|encoding|compression|tags|attributes|
++------------------------+-----+-------------+--------+--------+-----------+----+----------+
+|     root.ln.wf01.test.1| null|      root.ln|   FLOAT| GORILLA|     SNAPPY|null|      null|
+|     root.ln.wf01.test.2| null|      root.ln|   FLOAT| GORILLA|     SNAPPY|null|      null|
+|root.ln.wf01.temperature| null|      root.ln|   FLOAT| GORILLA|     SNAPPY|null|      null|
+|     root.ln.wf01.status| null|      root.ln|   FLOAT| GORILLA|     SNAPPY|null|      null|
++------------------------+-----+-------------+--------+--------+-----------+----+----------+
+Total line number = 4
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E24;&#x6761;&#x65F6;&#x95F4;&#x5E8F;&#x5217;root.ln.wf01.test.1&#x548C;root.ln.wf01.test.2&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x597D;&#x4E86;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x662F;&#x5426;&#x5BF9;&#x9F50;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> devices root.<span class="hljs-keyword">ln</span>.wf01.**
+</code></pre>
+<p>&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; show devices root.ln.wf01.**
++-----------------+---------+
+|          devices|isAligned|
++-----------------+---------+
+|root.ln.wf01.test|     true|
++-----------------+---------+
+Total line number = 1
+</code></pre>
+<h2 id="&#x67E5;&#x770B;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;">&#x67E5;&#x770B;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;</h2>
+<p>&#x67E5;&#x770B;&#x6240;&#x6709;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#xFF0C;SQL &#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> <span class="hljs-keyword">schema</span> templates
+</code></pre>
+<p>&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; show schema templates
++-------------+
+|template name|
++-------------+
+|           t1|
++-------------+
+Total line number = 1
+</code></pre>
+<p>&#x67E5;&#x770B;&#x67D0;&#x4E2A;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#x4E0B;&#x7684;&#x7269;&#x7406;&#x91CF;&#xFF0C;SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> nodes <span class="hljs-keyword">in</span> <span class="hljs-keyword">schema</span> <span class="hljs-keyword">template</span> t1
+</code></pre>
+<p>&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; show nodes in schema template t1
++-----------+--------+--------+-----------+
+|child nodes|dataType|encoding|compression|
++-----------+--------+--------+-----------+
+|          1|   FLOAT| GORILLA|     SNAPPY|
+|          2|   FLOAT| GORILLA|     SNAPPY|
++-----------+--------+--------+-----------+
+</code></pre>
+<h2 id="&#x5378;&#x8F7D;&#x5220;&#x9664;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;">&#x5378;&#x8F7D;/&#x5220;&#x9664;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;</h2>
+<p>&#x5378;&#x8F7D;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#xFF0C;SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">unset schema template t1 from root.ln.wf01
+</code></pre>
+<p>&#x8F93;&#x5165;&#xFF0C;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x8BF4;&#x6A21;&#x677F;&#x6B63;&#x5728;&#x5E94;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; unset schema template t1 from root.ln.wf01
+Msg: 326: Template is in use on root.ln.wf01.test
+</code></pre>
+<p>&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5148;&#x89E3;&#x9664;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#x7684;&#x5E94;&#x7528;&#xFF0C;SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">deactivate schema template t1 from root.ln.wf01.test
+</code></pre>
+<p>&#x8FD9;&#x65F6;&#x5019;&#x518D;&#x5378;&#x8F7D;&#x5C31;&#x6210;&#x529F;&#x4E86;&#x3002;</p>
+<p>&#x6700;&#x540E;&#x6211;&#x4EEC;&#x5220;&#x9664;&#x8FD9;&#x4E2A;&#x5143;&#x6570;&#x636E;&#x6A21;&#x677F;&#xFF0C;SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">drop</span> <span class="hljs-keyword">schema</span> <span class="hljs-keyword">template</span> t1
+</code></pre>
+<h1 id="&#x8282;&#x70B9;&#x7BA1;&#x7406;">&#x8282;&#x70B9;&#x7BA1;&#x7406;</h1>
+<h2 id="&#x67E5;&#x770B;&#x5B50;&#x8DEF;&#x5F84;">&#x67E5;&#x770B;&#x5B50;&#x8DEF;&#x5F84;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>SHOW CHILD PATHS pathPattern</code>&#x6765;&#x67E5;&#x770B;&#x6B64;&#x8DEF;&#x5F84;&#x6A21;&#x5F0F;&#x6240;&#x5339;&#x914D;&#x7684;&#x6240;&#x6709;&#x8DEF;&#x5F84;&#x7684;&#x4E0B;&#x4E00;&#x5C42;&#x7684;&#x6240;&#x6709;&#x8DEF;&#x5F84;&#xFF0C;&#x4F8B;&#x5982;&#x67E5;&#x770B;root.BHSFC&#x7684;&#x4E0B;&#x4E00;&#x5C42;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> <span class="hljs-keyword">child</span> paths root.BHSFC
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; show child paths root.BHSFC
++-------------+
+|  child paths|
++-------------+
+|root.BHSFC.Q1|
++-------------+
+Total line number = 1
+</code></pre>
+<h2 id="&#x67E5;&#x770B;&#x5B50;&#x8282;&#x70B9;">&#x67E5;&#x770B;&#x5B50;&#x8282;&#x70B9;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>SHOW CHILD NODES pathPattern</code>&#x67E5;&#x770B;&#x6B64;&#x8DEF;&#x5F84;&#x6A21;&#x5F0F;&#x6240;&#x5339;&#x914D;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x5C42;&#x7684;&#x6240;&#x6709;&#x8282;&#x70B9;&#xFF0C;&#x4F8B;&#x5982;&#x67E5;&#x8BE2; root &#x7684;&#x4E0B;&#x4E00;&#x5C42;&#xFF1A;</p>
+<pre><code class="lang-SQL"><span class="hljs-keyword">show</span> <span class="hljs-keyword">child</span> nodes root
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; show child nodes root
++-----------+
+|child nodes|
++-----------+
+|      BHSFC|
+|         ln|
++-----------+
+Total line number = 2
+</code></pre>
+<h2 id="&#x7EDF;&#x8BA1;&#x8282;&#x70B9;&#x6570;">&#x7EDF;&#x8BA1;&#x8282;&#x70B9;&#x6570;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>COUNT NODES &lt;PathPattern&gt; LEVEL=&lt;INTEGER&gt;</code>&#x6765;&#x7EDF;&#x8BA1;&#x5F53;&#x524D;&#x6EE1;&#x8DB3;&#x67D0;&#x8DEF;&#x5F84;&#x6A21;&#x5F0F;&#x7684;&#x8DEF;&#x5F84;&#x4E2D;&#x6307;&#x5B9A;&#x5C42;&#x7EA7;&#x7684;&#x8282;&#x70B9;&#x4E2A;&#x6570;&#x3002;</p>
+<p><img src="img/img14.png" alt="img14"></p>
+<p>&#x7ED3;&#x5408;&#x6570;&#x636E;&#x6A21;&#x5F0F;&#xFF0C;&#x5047;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x7EDF;&#x8BA1;root.BHSFC&#x5B58;&#x50A8;&#x7EC4;&#x4E2D;&#x8FD9;&#x4E24;&#x4E2A;&#x6D4B;&#x70B9;&#x7684;&#x8BBE;&#x5907;&#x6570;&#xFF0C;SQL&#x8BED;&#x53E5;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">count nodes root.BHSFC.Q1.* level=3
+</code></pre>
+<p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; count nodes root.BHSFC.Q1.* level=3
++-----+
+|count|
++-----+
+|    2|
++-----+
+Total line number = 1
+</code></pre>
+<p>&#x4E24;&#x4E2A;&#x8282;&#x70B9;&#x5373;level3&#x4E0A;Q1&#x7684;&#x4E24;&#x4E2A;&#x5206;&#x652F;w002&#x548C;w003&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x8FD9;&#x6761;SQL&#x8BED;&#x53E5;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x7EDF;&#x8BA1;&#x5C42;&#x7EA7;3&#xFF0C;&#x5373;&#x8DEF;&#x5F84;ln&#x4E4B;&#x4E0B;&#x6240;&#x6709;&#x7684;&#x8282;&#x70B9;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-SQL">count nodes root.ln.** level=3
+</code></pre>
+<p>&#x7ED3;&#x5408;&#x6570;&#x636E;&#x6A21;&#x5F0F;&#x56FE;&#x53EF;&#x770B;&#x5230;&#x5E94;&#x4E3A;Wf01&#x3001;status&#x3001;temperature&#x5171;3&#x4E2A;&#x3002;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-SQL">IoTDB&gt; count nodes root.ln.** level=3
++-----+
+|count|
++-----+
+|    3|
++-----+
+Total line number = 1
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="10、基本操作（4）数据写入与导出.html" class="navigation navigation-prev " aria-label="Previous page: 数据写入与导出">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="12、时区注意事项.html" class="navigation navigation-next " aria-label="Next page: 附录">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"元数据管理","level":"1.4.5","depth":2,"next":{"title":"附录","level":"1.5","depth":1,"path":"12、时区注意事项.md","ref":"12、时区注意事项.md","articles":[{"title":"时区注意事项","level":"1.5.1","depth":2,"path":"12、时区注意事项.md","ref":"12、时区注意事项.md","articles":[]}]},"previous":{"title":"数据写入与导出","level":"1.4.4","depth":2,"path":"10、基本操作（4）数据写入与导出.md","ref":"10、基本操作（4）数据写入与导出.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"11、基本操作（5）元数据管理.md","mtime":"2022-08-15T07:55:25.541Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-17T07:19:25.384Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
